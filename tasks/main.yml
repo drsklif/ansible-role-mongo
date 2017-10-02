@@ -1,0 +1,5 @@
+---
+# tasks file for db
+
+- include: install_mongo.yml
+- include: config_mongo.yml
