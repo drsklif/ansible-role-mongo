@@ -21,10 +21,10 @@ before_install:
 - tar xvf credentials.tar.gz
 # If the SDK is not already cached, download it and unpack it
 - if [ ! -d ${HOME}/google-cloud-sdk ]; then
-     rm -rf $HOME/google-cloud-sdk;
-     export CLOUDSDK_CORE_DISABLE_PROMPTS=1;
-     curl https://sdk.cloud.google.com | bash;
+    rm -rf $HOME/google-cloud-sdk;
+    export CLOUDSDK_CORE_DISABLE_PROMPTS=1;
+    curl https://sdk.cloud.google.com | bash;
   fi
 #- mv google_compute_engine /home/travis/.ssh/
-- gcloud auth activate-service-account --key-file client-secret.json
-- chmod 0600 /home/travis/.ssh/google_compute_engine
+#- gcloud auth activate-service-account --key-file client-secret.json
+#- chmod 0600 /home/travis/.ssh/google_compute_engine
