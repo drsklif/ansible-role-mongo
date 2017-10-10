@@ -1,6 +1,7 @@
 credentials.tar.gz
 secrets.tar
 client-secret.json
+credentials.json
 api_key.py
 lib/
 google_compute_engine
